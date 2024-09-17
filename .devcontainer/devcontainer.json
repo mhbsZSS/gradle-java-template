@@ -28,7 +28,7 @@
 	"forwardPorts": [3306],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "docker compose up -d"
+	"postCreateCommand": "sdk install java 21-oracle;sdk use java 21-oracle"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
