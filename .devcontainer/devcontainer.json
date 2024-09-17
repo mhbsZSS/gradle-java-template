@@ -27,7 +27,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [3306],
 
-	"postAttachCommand": "sdk install java 21-oracle;sdk use java 21-oracle"
+	"postStartCommand": "sdk install java 21-oracle;sdk use java 21-oracle"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
