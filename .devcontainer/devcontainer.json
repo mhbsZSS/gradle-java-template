@@ -1,6 +1,17 @@
 {
     "build": {
-        // Path is relative to the devcontainer.json file.
         "dockerfile": "Dockerfile"
-    }
+    },
+    "features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"version": "latest",
+			"enableNonRootDocker": "true",
+			"moby": "true"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": ["vscjava.vscode-java-pack", "humao.rest-client"]
+		}
+	}
 }
